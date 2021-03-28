@@ -1,14 +1,11 @@
-var http = require('http');
-var server = http.createServer(function (request, response) {
-  response.writeHead(200,{"Content-type" : "text/css"});
-  var fileContents = fs.readFileSync('styles.css', {encoding: "utf8"}, function(err, data) {
-    if (!err) {
-      response.write(data);
-    } else {
-      console.log(err);
-    }
-    });
-  router.home(request, response);
-  router.user(request, response);
+const express = require("express");
+const app = express();
+app.use(express.static("public"));
+
+app.get('/', (req, res) => {
+  res.sendFile('public/index.html');
+})
+
+app.listen(3000, function() {
+  console.log("Running on port 3000.");
 });
-server.listen(3000);
