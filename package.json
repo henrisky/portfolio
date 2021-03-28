@@ -1,0 +1,14 @@
+{
+    "name": "portfolio",
+    "description": "portfolio",
+    "version": "15.10.0",
+    "private": true,
+    "license": "MIT",
+    "author": "Microsoft",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
