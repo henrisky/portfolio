@@ -4,5 +4,6 @@
         ".vscode{,/**}"
     ],
     "appService.deploySubpath": ".",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "appService.defaultWebAppToDeploy": "/subscriptions/72b4939b-d3a9-4d8e-bf0d-af281ef3fd12/resourceGroups/portfolio-ha-rg2/providers/Microsoft.Web/sites/portfolio-ha"
 }
