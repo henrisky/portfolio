@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.sendFile('index.html');
 })
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.listen(port, function() {
   console.log("Running on port 3000.");
